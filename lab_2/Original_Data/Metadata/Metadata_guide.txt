@@ -1,0 +1,22 @@
+Kodowanie oryginalnych danych:
+
+Kolumna 1 - zapis w postaci MX000017004YYYYMMIIII , gdzie:
+MX000017004 - kod stacji pogodowej w której zostały wykonane pomiary
+YYYY - rok dokonania pomiarów
+MM - miesiąc dokonania pomiarów 
+IIII - rodzaj pomiaru który jest zapisany w wierszu TMAX, TMIN, PRCP
+
+kolumny 2-32 - pomiary parametrów w kolejnych dniach miesiąca, w zależniości od pierwszej kolumny są to:
+TMAX - maksymalna temperatura w ciągu dnia wyrażona w stopniach Celsjusza z dokładnością do części dziesiętnych
+TMIN - minimalna temperatura w ciągu dnia wyrażona w stopniach Celsjusza z dokładnością do części dziesiętnych
+PRCP - opady
+
+Oznaczenia spacjalne:
+9999 - brak danych
+I - zbiór miedzynarodowe (dane spoza USA otrzymane za pomocą kontaków osobistych)
+S - Globalne podsumowanie dnia (NCDC DSI-9618)
+
+UWAGA: wartości „S” pochodzą z godzinowych raportów synoptycznych
+wymienianych w Globalnym Systemie Telekomunikacyjnym (GTS).
+Uzyskane w ten sposób dzienne wartości mogą się znacznie różnić
+z „prawdziwych” danych dziennych, szczególnie dla opadów (tj. należy zachować ostrożność).
